@@ -1,0 +1,33 @@
+lr0: 0.00269
+lrf: 0.00288
+momentum: 0.73375
+weight_decay: 0.00015
+warmup_epochs: 1.22935
+warmup_momentum: 0.1525
+drop_out: 0.5
+box: 18.27875
+cls: 1.32899
+dfl: 0.56016
+hsv_h: 0.01148
+hsv_s: 0.53554
+hsv_v: 0.13636
+degrees: 0.0
+translate: 0.12431
+scale: 0.07643
+shear: 0.0
+perspective: 0.0
+flipud: 0.0
+fliplr: 0.08631
+mosaic: 0.42551
+mixup: 0.0
+copy_paste: 0.5
+
+train: train/path
+val: val/path
+nc: 4
+
+names:
+ 0: bike
+ 1: car
+ 2: coach
+ 3: container
