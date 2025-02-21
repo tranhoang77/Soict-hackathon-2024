@@ -1,0 +1,9 @@
+[submodule "preprocessing/GSAD"]
+	path = preprocessing/GSAD
+	url = https://github.com/jinnh/GSAD.git
+[submodule "preprocessing/NAFNet"]
+	path = preprocessing/NAFNet
+	url = https://github.com/megvii-research/NAFNet.git
+[submodule "training/Co-DETR"]
+	path = training/Co-DETR
+	url = https://github.com/Sense-X/Co-DETR.git
