@@ -121,13 +121,13 @@ def create_yolo_folder_structure(source_dir, source_dir_label, output_dir, delet
         # Create data.yaml file
         print("\nCreating data.yaml...")
         yaml_content = f"""train: {os.path.join(dataset_dir, 'images', 'train')}
-val: {os.path.join(dataset_dir, 'images', 'val')}
-nc: 4  # number of classes (modify as needed)
-names:   # class names (modify as needed)
-    0: bike
-    1: car
-    2: coach
-    3: container """
+                            val: {os.path.join(dataset_dir, 'images', 'val')}
+                            nc: 4  # number of classes (modify as needed)
+                            names:   # class names (modify as needed)
+                                0: bike
+                                1: car
+                                2: coach
+                                3: container """
     
         with open(os.path.join(dataset_dir, 'data.yaml'), 'w') as f:
             f.write(yaml_content)

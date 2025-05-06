@@ -27,7 +27,7 @@ def filter_detections(input_file_cam11, input_file_cam13, output_file):
             # Extract relevant information
             image_name = parts[0]
             class_id = int(parts[1])
-            score = float(parts[6])  # Score is at index 6
+            score = float(parts[6]) 
 
             if "cam_11" in image_name:
                 if class_id in score_thresholds and score >= score_thresholds[class_id]:
@@ -39,12 +39,12 @@ def filter_detections(input_file_cam11, input_file_cam13, output_file):
             # Split the line into components
             parts = line.strip().split()
 
-            # Extract relevant information
             image_name = parts[0]
             class_id = int(parts[1])
-            score = float(parts[6])  # Score is at index 6
+            score = float(parts[6])  
 
             if "cam_13" in image_name:
+                # motorcycle in cam_13 is clearly visible
                 if class_id in score_thresholds and score >= score_thresholds2[class_id]:
                     filtered_lines.append(line)
 

@@ -1,5 +1,4 @@
 import argparse
-import torch
 import shutil
 from basicsr.models import create_model
 from basicsr.utils import img2tensor as _img2tensor, tensor2img, imwrite
